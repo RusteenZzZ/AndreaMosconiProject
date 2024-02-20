@@ -34,7 +34,7 @@ root.render(
         <Route path="/" element={<Marketplace />} />
         <Route path="/sellNFT" element={<SellNFT />} />
         <Route path="/nftPage/:contract_address/:tokenId" element={<NFTPage />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={<div>LOLOLO</div>} />
         <Route path="/NFT_Creator/:tokenId" element={<Creator_NFT/>}/>
         <Route path="/NFT_Creator_Collection/:tokenId/:collection_address" element={<CreatorNFTCollection/>}/>
         <Route path="/admin" element={<Admin />} />
