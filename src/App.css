@@ -1,0 +1,119 @@
+.font-face-mk {
+  font-family: "Mak", "serif";
+}
+.font-face-mt {
+  font-family: "Montserrat", "serif";
+}
+.aboutCards {
+  padding-left: 0px !important;
+  padding-right: 16px !important;
+}
+.css-1aquho2-MuiTabs-indicator {
+  background-color: black !important;
+}
+.navbarCustom {
+  height: 130px;
+}
+.borderBottomART {
+  height: 2px;
+  background-color: black;
+  width: 200px;
+}
+.dianaCards {
+  padding-left: 0px !important;
+  padding-right: 16px !important;
+}
+.dianaCards:hover .borderBottomART {
+  background-color: goldenrod;
+}
+.artworkDetails th {
+  padding: 5px 10px 5px 0px;
+  font-size: 21px;
+  font-family: Montserrat, serif;
+  text-align: left;
+}
+.artworkDetails td {
+  font-size: 21px;
+  font-family: Montserrat, serif;
+  text-align: left;
+}
+@media (max-width: 1439px) {
+  .MarketPlacePage {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .ProfilePage {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .NFTPAGEPage {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .profileLeft {
+    padding-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .dianaCardsALL {
+    padding: 0px 0px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navbarCustom {
+    height: 130px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbarCustom {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .navbarCustom {
+    height: 295px;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.Mui-selected {
+  color: #374151 !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+html {
+  background: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

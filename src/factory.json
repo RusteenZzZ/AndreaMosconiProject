@@ -1,0 +1,226 @@
+[
+  { "type": "constructor", "payable": false, "inputs": [] },
+  {
+    "type": "event",
+    "anonymous": false,
+    "name": "Collections_event",
+    "inputs": [
+      { "type": "uint256", "name": "collectionId", "indexed": false },
+      { "type": "address", "name": "creator", "indexed": false },
+      { "type": "address", "name": "collection_address", "indexed": false }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "Artistss",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "SenderAddress",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "changeOwner",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "newOwner" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "contracts",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "uint256" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "create_contracts",
+    "constant": false,
+    "stateMutability": "payable",
+    "payable": true,
+    "inputs": [
+      { "type": "string", "name": "collection_name" },
+      { "type": "string", "name": "collection_symbol" },
+      { "type": "string", "name": "collection_description" },
+      { "type": "string", "name": "collection_URL" },
+      { "type": "string", "name": "collection_image" },
+      { "type": "string", "name": "collection_banner" },
+      { "type": "string", "name": "category" }
+    ],
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "name": "getAllcollection_address",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getListPrice",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "string", "name": "category" }],
+    "outputs": [{ "type": "uint256" }]
+  },
+  {
+    "type": "function",
+    "name": "getOwner",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "getallartists",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getartistdescription",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "artist" }],
+    "outputs": [
+      {
+        "type": "tuple",
+        "components": [
+          { "type": "string", "name": "artist_name" },
+          { "type": "string", "name": "artist_info" },
+          { "type": "string", "name": "profile_image_uri" },
+          { "type": "string", "name": "user_banner_uri" },
+          { "type": "string", "name": "website" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "getcollection_address_by_artist",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "_address" }],
+    "outputs": [{ "type": "address[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getcollection_address_by_my_artist",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [],
+    "outputs": [{ "type": "address[]" }]
+  },
+  {
+    "type": "function",
+    "name": "getcollectiondescription",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "collection_" }],
+    "outputs": [
+      {
+        "type": "tuple",
+        "components": [
+          { "type": "uint256", "name": "collectionId" },
+          { "type": "address", "name": "creator" },
+          { "type": "address", "name": "collection_address" },
+          { "type": "string", "name": "collection_name" },
+          { "type": "string", "name": "collection_description" },
+          { "type": "string", "name": "collection_image" },
+          { "type": "string", "name": "collection_URL" },
+          { "type": "string", "name": "collection_banner" },
+          { "type": "string", "name": "category" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "isArtistAllowed",
+    "constant": true,
+    "stateMutability": "view",
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "personaddress" }],
+    "outputs": [{ "type": "bool" }]
+  },
+  {
+    "type": "function",
+    "name": "removeAnArtist",
+    "constant": false,
+    "stateMutability": "payable",
+    "payable": true,
+    "inputs": [{ "type": "address", "name": "artistToDelete" }],
+    "outputs": [{ "type": "address[]" }]
+  },
+  {
+    "type": "function",
+    "name": "setanartists",
+    "constant": false,
+    "payable": false,
+    "inputs": [{ "type": "address", "name": "artist" }],
+    "outputs": [{ "type": "address" }]
+  },
+  {
+    "type": "function",
+    "name": "setanartistsdesc",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "address", "name": "artist" },
+      { "type": "string", "name": "artist_name" },
+      { "type": "string", "name": "_artist_description" },
+      { "type": "string", "name": "_profileimageuri" },
+      { "type": "string", "name": "_profilebanneruri" },
+      { "type": "string", "name": "_website" }
+    ],
+    "outputs": [
+      {
+        "type": "tuple",
+        "components": [
+          { "type": "string", "name": "artist_name" },
+          { "type": "string", "name": "artist_info" },
+          { "type": "string", "name": "profile_image_uri" },
+          { "type": "string", "name": "user_banner_uri" },
+          { "type": "string", "name": "website" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "function",
+    "name": "update_listprice",
+    "constant": false,
+    "payable": false,
+    "inputs": [
+      { "type": "uint256", "name": "listprice" },
+      { "type": "string", "name": "category" }
+    ],
+    "outputs": []
+  }
+]

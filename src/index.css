@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Open Sans',sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: "Mak";
+  src: local("Mak"),
+   url("./fonts/FontsFree-Net-MAK-bold.ttf") format("truetype");
+  font-weight: bolder;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+     url("./fonts/Montserrat\ Regular\ 400.ttf") format("truetype");
+    font-weight: bolder;
+    }
